@@ -3,10 +3,12 @@
      <h2>About</h2>
      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, fugit totam libero hic voluptate porro cupiditate quia quam nam reiciendis unde culpa repudiandae molestias praesentium, nesciunt ipsam temporibus dolor itaque.</p>
      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, fugit totam libero hic voluptate porro cupiditate quia quam nam reiciendis unde culpa repudiandae molestias praesentium, nesciunt ipsam temporibus dolor itaque.</p>
+     <div> {{ data }} </div>
     </div>
 </template>
 
 <script setup>
+  const { data } = await useFetch('/api/apiRoutes');
 
 </script>
 
